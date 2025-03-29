@@ -89,14 +89,14 @@ module.exports = {
       {
         choosen: 'gitalk',
         options: {
-          clientID: '填入你的clientID',
-          clientSecret: '填入你的clientSecret',
-          repo: '填入你的仓库名', // GitHub 仓库
-          owner: '填入你的GitHub用户名', // GitHub仓库所有者
-          admin: ['填入你的GitHub用户名'], // 对仓库有写权限的人
+          clientID: 'Ov23liXDdqVlJCCAPHGJ',
+          clientSecret: '517ee10477c7b2a1cce518b52e1c0772adc25021',
+          repo: 'vuepress-blog', // GitHub 仓库
+          owner: 'new-info', // GitHub仓库所有者
+          admin: ['new-info'], // 对仓库有写权限的人
           distractionFreeMode: false,
           pagerDirection: 'last', // 'first'正序 | 'last'倒序
-          id: '<%- (frontmatter.permalink || frontmatter.to.path).slice(-16) %>', //  页面的唯一标识,长度不能超过50
+          id: '<%- (frontmatter.permalink || frontmatter.to.path || "").slice(-16) %>', // 页面的唯一标识,长度不能超过50
           title: '「评论」<%- frontmatter.title %>', // GitHub issue 的标题
           labels: ['Gitalk', 'Comment'], // GitHub issue 的标签
           body: '页面：<%- window.location.origin + (frontmatter.to.path || window.location.pathname) %>' // GitHub issue 的内容
