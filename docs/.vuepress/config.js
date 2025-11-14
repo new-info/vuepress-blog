@@ -1,5 +1,5 @@
 module.exports = {
-  title: '示例文档',
+  title: '个人知识库',
   description: '基于VuePress的知识管理框架',
   theme: 'vdoing',
   themeConfig: {
@@ -11,20 +11,8 @@ module.exports = {
         link: '/categories/'
       },
       {
-        text: '使用说明',
-        link: '/guide/',
-        items: [
-          { text: '快速上手', link: '/pages/quick-start/' },
-          { text: '基本结构', link: '/pages/basic-structure/' },
-          { text: '评论功能配置', link: '/pages/comment-config/' }
-        ]
-      },
-      {
-        text: '自习室',
-        link: '/study/',
-        items: [
-          { text: '学习笔记', link: '/pages/april-2025/' }
-        ]
+        text: '日常记录',
+        link: '/study/'
       },
       { text: '关于', link: '/about/' }
     ],
@@ -33,17 +21,17 @@ module.exports = {
     sidebar: 'structuring',
     // 页面底部信息
     footer: {
-      createYear: 2023,
-      copyrightInfo: 'MIT Licensed | Copyright © 2023'
+      createYear: 2025,
+      copyrightInfo: 'MIT Licensed | Copyright © 2025'
     },
     // 作者信息
     author: {
-      name: '示例作者',
+      name: 'new-info',
       link: 'https://github.com/'
     },
     // 博客配置
     blogInfo: {
-      blogger: '示例作者',
+      blogger: 'new-info',
       avatar: '/img/logo.png'
     },
     // 最后更新时间
@@ -65,8 +53,8 @@ module.exports = {
     ['thirdparty-search', {
       thirdparty: [
         {
-          title: '在MDN中搜索',
-          frontUrl: 'https://developer.mozilla.org/zh-CN/search?q=',
+          title: '在 copilot 中搜索',
+          frontUrl: 'https://copilot.microsoft.com/',
         }
       ]
     }],
